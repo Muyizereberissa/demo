@@ -33,3 +33,104 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+
+  // <View style={styles.container}>
+    //   <View style={{marginTop:0,height:70, backgroundColor:"orange", width: 400, padding:10}}>
+    //     <Text style={{color:"white", textAlign:"right",fontSize:30}}> ToDo </Text>
+    //   </View>
+    //   <Text style={{marginTop:50, width: 300}}>Todo list items</Text>
+    //   <View>
+    //     <TouchableOpacity>
+    //       <Text  style={{borderWidth:1, borderStyle:"dashed",marginTop:10, borderRadius:10,width:300,padding:10}}>1 cleaning</Text>
+    //     </TouchableOpacity>
+    //     <TouchableOpacity>
+    //       <Text  style={{borderWidth:1, borderStyle:"dashed",marginTop:20, borderRadius:10,width:300,padding:10}}>1 cleaning</Text>
+    //     </TouchableOpacity>
+    //     <TouchableOpacity>
+    //     <Text style={{borderWidth:1, borderStyle:"dashed",marginTop:20, borderRadius:10,width:300,padding:10}}>1 cleaning</Text>
+    //     </TouchableOpacity>
+    //     <TouchableOpacity>
+    //      <Text style={{borderWidth:1, borderStyle:"dashed",marginTop:20, borderRadius:10,width:300,padding:10}}>1 cleaning</Text>
+    //     </TouchableOpacity>
+    //   </View>
+
+    //   <StatusBar style="auto" />
+    // </View>
+
+
+    import Feather from 'react-native-vector-icons/Feather'
+import AntDesign from 'react-native-vector-icons/AntDesign'
+
+   <View style={styles.container}> 
+      <Text style={{marginTop: 100, fontWeight: 'bold', fontSize: 30}}> Sign In</Text>
+      <Text> Wellcome back! Please enter your details</Text>
+      <StatusBar style="auto" />
+      <View style={{marginTop: 60}}>
+        <View style={styles.Feather}> 
+          <Feather name="mail" size={30} color="pink" />
+        </View>
+        <TouchableOpacity>
+        <Text  style={{border: 'none',marginTop:20,textAlign:'center', borderRadius:10,width:300,padding:18, backgroundColor:'lightgrey', position:'relative'}}>b.hello@gmail.com</Text>
+        </TouchableOpacity>
+        <View>
+        <View style={styles.AntDesign}> 
+          <AntDesign name="lock" size={30} color="skyblue"/>
+        </View>
+          <TextInput  secureTextEntry placeholder="Password" style={{border: 'none',marginTop:20, borderRadius:10,width:300,padding:15,position:'relative', textAlign:'center', backgroundColor:'lightgrey'}}></TextInput>
+        </View>
+        <View>
+
+        </View>
+      </View> 
+      
+      <View style={{flexDirection: 'row', marginTop: 200}}> 
+        <Text style={{color: 'blue', fontWeight: 'bold',}}>Forgot Password?</Text>
+      </View>
+      <Text style={{marginTop: 20, backgroundColor: 'skyblue', padding: 10, width: 300, borderRadius: 20, textAlign: 'center'}}>Sign In</Text>
+      <View style={{flexDirection: 'row', marginTop: 20, display: 'flex', gap: 110}}>
+        <Text>Create account</Text>
+        <Text style={{color: 'orange'}}>Sign Up</Text>
+      </View>
+
+      <View style={styles.icons}>
+                <TouchableOpacity>
+                    <Icon name="facebook" size={30} color="blue" />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Icon name="google" size={30} color="red" />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Icon name="apple" size={30} color="black" />
+                </TouchableOpacity>
+      </View>
+    </View>
+
+
+
+
+
+
+    },
+
+  icons:{
+    flexDirection: 'row',
+    marginTop: 50,
+    display: 'flex',
+    gap: 100
+  },
+  Feather:{
+    marginTop: 30,
+    position: 'absolute',
+    left: 10,
+    border: 5,
+    backgroundColor: 'lightpink',
+    borderRadius: 10
+   
+  },
+  AntDesign:{
+    marginTop: 30,
+    position: 'absolute',
+    left: 10,
+   
+  }
